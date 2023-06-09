@@ -4,7 +4,7 @@ export default {
   root: './src',
   publicDir: './../public',
   build: {
-    outDir: './../dist',
+    outDir: './../docs',
     emptyOutDir: true,
     rollupOptions: {
       input: {
