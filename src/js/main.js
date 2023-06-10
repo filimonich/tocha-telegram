@@ -1,4 +1,4 @@
-import './../css/style.css';
+import './../styles/style.scss';
 import javascriptLogo from '/javascript.svg';
 import viteLogo from '/vite.svg';
 import { setupCounter } from './counter.js';
@@ -14,7 +14,7 @@ document.querySelector('#app').innerHTML = `
     <h1>Hello Vite!</h1>
     <div class="card">
       <button id="counter" type="button"></button>
-      <a href="./../pages/other.html" target="_blank">
+      <a href="./../index.html" target="_blank">
         <button>Сайт</button>
       </a>
     </div>
