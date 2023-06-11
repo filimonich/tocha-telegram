@@ -9,7 +9,7 @@ export default {
     rollupOptions: {
       input: {
         main: '/index.html',
-        other: '/pages/other.html',
+        other: '/pages/modal.html',
       },
     },
   },
