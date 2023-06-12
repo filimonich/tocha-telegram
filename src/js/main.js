@@ -25,3 +25,6 @@ document.querySelector('#app').innerHTML = `
 `;
 
 setupCounter(document.querySelector('#counter'));
+
+console.log(1);
+console.log('привет');
