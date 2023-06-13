@@ -6,6 +6,9 @@
   <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tocha Telegram</title>
+  
+  <script type="module" crossorigin src="/assets/main-85e77813.js"></script>
+  <link rel="stylesheet" href="/assets/index-b321e0fa.css">
 </head>
 
 <body class="wrapper">
@@ -15,7 +18,7 @@
         <!-- <svg class="logo__img">
           <use href="/logo.svg"></use>
         </svg> -->
-        <img src="/images/logo.png" alt="">
+        <img src="/images/logo.png" alt="logo">
         <span class="logo__title">tocha</span>
       </a>
       <nav class="menu">
@@ -27,12 +30,15 @@
         </ul>
       </nav>
     </header>
-    <div class="hero__title-section">
-      <h1 class="hero__main-title"><span>Telegram чат</span> на вашем сайте</h1>
-      <p class="hero__title-text">Общение с клиентами станет простым и удобным, а подключение займет 5 минут. Первый
+    <div class="hero__title">
+      <h1 class="hero__main"><span>Telegram чат</span> на вашем сайте</h1>
+      <p class="hero__text">Общение с клиентами станет простым и удобным, а подключение займет 5 минут. Первый
         месяц <span>— бесплатно</span>
       </p>
-      <button class="btn btn--theme--red">Подключить</button>
+      <button class="hero__button button">Подключить</button>
+    </div>
+    <div class="hero__picture">
+      <img src="/images/hero-ilustration.png" alt="a girl communicates on a tablet" class="hero__img">
     </div>
 
   </section>
@@ -45,7 +51,8 @@
         <ul class="description__benefits">
           <li class="description__benefit">
             <a href="" class="description__benefit-images">
-              <svg class="description__benefit-img"></svg>
+              <!-- <img class="description__benefit-img"></img> -->
+              <img src="/images/Group.svg" alt="paper airplane">
             </a>
             <div class="description__text">
               <h3 class="description__title">Ничего лишнего</h3>
@@ -56,7 +63,8 @@
           </li>
           <li class="description__benefit">
             <a href="" class="description__benefit-images">
-              <svg class="description__benefit-img"></svg>
+              <!-- <svg class="description__benefit-img"></svg> -->
+              <img src="/images/Simplicity.svg" alt="suitcase and up arrows">
             </a>
             <div class="description__text">
               <h3 class="description__title">Простота</h3>
@@ -67,7 +75,8 @@
           </li>
           <li class="description__benefit">
             <a href="" class="description__benefit-images">
-              <svg class="description__benefit-img"></svg>
+              <!-- <svg class="description__benefit-img"></svg> -->
+              <img src="/images/Frame.svg" alt="assistant">
             </a>
             <div class="description__text">
               <h3 class="description__title">Несколько ассистентов</h3>
@@ -78,7 +87,8 @@
           </li>
           <li class="description__benefit">
             <a href="" class="description__benefit-images">
-              <svg class="description__benefit-img"></svg>
+              <!-- <svg class="description__benefit-img"></svg> -->
+              <img src="/images/Customization.svg" alt="customization">
             </a>
             <div class="description__text">
               <h3 class="description__title">Кастомизация</h3>
@@ -90,7 +100,7 @@
         </ul>
       </div>
       <div class="description__pic">
-        <img src="#" alt="photo" class="description__img">
+        <img src="/images/iPhone-X-1.png" alt="iphone with correspondence about tocha" class="description__img">
       </div>
     </div>
 
@@ -150,7 +160,8 @@
             </div>
             <p class="connection__subtitle">Telegram bot</p>
             <p class="connection__text">Вы создаёте Telegram бота для вашего сайта</p>
-            <div class="connection__pic"><img src="#" alt="contact image" class="connection__img"></div>
+            <div class="connection__pic"><img src="/images/iPhone-X.png" alt="contact in iphone"
+                class="connection__img"></div>
           </li>
           <li class="connection__benefit">
             <div class="connection__caption">
@@ -158,7 +169,8 @@
             </div>
             <p class="connection__subtitle">Подключение Tocha</p>
             <p class="connection__text">Tocha подключает Telegram бота к вашиму сайту</p>
-            <div class="connection__pic"><img src="#" alt="connection image" class="connection__img"></div>
+            <div class="connection__pic"><img src="/images/iPhone-X-2.png" alt="connection in iphone"
+                class="connection__img"></div>
           </li>
           <li class="connection__benefit">
             <div class="connection__caption">
@@ -166,7 +178,9 @@
             </div>
             <p class="connection__subtitle">Telegram-чат</p>
             <p class="connection__text">Консультат отвечает на вопросы посетителей</p>
-            <div class="connection__pic"><img src="#" alt="chat telegram image" class="connection__img"></div>
+            <div class="connection__pic"><img src="/images/iPhone-X-3.png" alt="chat telegram in iphone"
+                class="connection__img">
+            </div>
           </li>
         </ul>
       </div>
@@ -175,23 +189,24 @@
   </section>
 
   <section class="section">
-    <div class="reviews">
-      <h2 class="reviews__headline">Отзывы клиентов</h2>
-      <div class="reviews-slider">
-        <ul class="reviews-slider__benefits">
-          <li class="reviews-slider__benefit">
-            <div class="reviews-slider__content">
-              <div class="reviews-slider__reviews">
-                <h3 class="reviews-slider__subtitle">Как же удобно!</h3>
-                <p class="reviews-slider__review">Согласно современным стандартам, основные модели поведения
+    <div class="overviews">
+      <h2 class="overviews__headline">Отзывы клиентов</h2>
+      <div class="overviews-slider">
+        <ul class="overviews-slider__benefits">
+          <li class="overviews-slider__benefit">
+            <div class="overviews-slider__content">
+              <div class="overviews-slider__overviews">
+                <h3 class="overviews-slider__subtitle">Как же удобно!</h3>
+                <p class="overviews-slider__review">Согласно современным стандартам, основные модели поведения
                   пользователей, которые являются характерным примером политической культуры континентально-европейского
                   типа, будут подвергнуты критике со стороны социальной демократии. 😊</p>
               </div>
-              <div class="reviews-slider__person">
-                <div class="reviews-slider__pic"><img src="#" alt="photo client" class="reviews-slider__img"></div>
-                <div class="reviews-slider__text">
-                  <p class="reviews-slider__name">Анна Купер</p>
-                  <p class="reviews-slider__link">
+              <div class="overviews-slider__person">
+                <div class="overviews-slider__pic"><img src="/images/Anna.png" alt="Anna" class="overviews-slider__img">
+                </div>
+                <div class="overviews-slider__text">
+                  <p class="overviews-slider__name">Анна Купер</p>
+                  <p class="overviews-slider__link">
                     <a href="https://romashka.ru">romashka.ru</a>
                   </p>
                 </div>
@@ -200,21 +215,23 @@
           </li>
         </ul>
       </div>
-      <div class="reviews-slider">
-        <ul class="reviews-slider__benefits">
-          <li class="reviews-slider__benefit">
-            <div class="reviews-slider__content">
-              <div class="reviews-slider__reviews">
-                <h3 class="reviews-slider__subtitle"></h3>
-                <p class="reviews-slider__review">Интерактивные прототипы, несмотря на то, что они часто становятся
+      <div class="overviews-slider">
+        <ul class="overviews-slider__benefits">
+          <li class="overviews-slider__benefit">
+            <div class="overviews-slider__content">
+              <div class="overviews-slider__overviews">
+                <h3 class="overviews-slider__subtitle"></h3>
+                <p class="overviews-slider__review">Интерактивные прототипы, несмотря на то, что они часто становятся
                   объектом насмешек, имеют важное значение для общества. Однако выводы, которые кажутся банальными и
                   очевидными, а также детальный анализ конкурентов способствуют формированию сети. 😊</p>
               </div>
-              <div class="reviews-slider__person">
-                <div class="reviews-slider__pic"><img src="#" alt="photo client" class="reviews-slider__img"></div>
-                <div class="reviews-slider__text">
-                  <p class="reviews-slider__name">Андрей Васильев</p>
-                  <p class="reviews-slider__link">
+              <div class="overviews-slider__person">
+                <div class="overviews-slider__pic"><img src="/images/Andrey.png" alt="Andrey"
+                    class="overviews-slider__img">
+                </div>
+                <div class="overviews-slider__text">
+                  <p class="overviews-slider__name">Андрей Васильев</p>
+                  <p class="overviews-slider__link">
                     <a href="https://samogon-ont.ru">samogon-ont.ru</a>
                   </p>
                 </div>

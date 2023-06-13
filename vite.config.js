@@ -1,4 +1,5 @@
 import injectHTML from 'vite-plugin-html-inject';
+import sassGlobImports from 'vite-plugin-sass-glob-import';
 
 export default {
   root: './src',
@@ -13,5 +14,6 @@ export default {
       },
     },
   },
-  plugins: [injectHTML()],
+
+  plugins: [injectHTML(), sassGlobImports()],
 };

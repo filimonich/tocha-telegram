@@ -23,6 +23,24 @@ $field: #FFFEF1;
 $own: #F7FFF4;
 $green:#25D366;
 
+/* Утилиты */
+// подключить шрифт
+// Очень долго разбирался как это работает, не мог понять почему выходит ошибка.
+// Когда ошибка была в путях($folder: "/fonts/), то ошибка выскакивала о всех форматах файлов
+// Когда путь правельный, то я не обратил внимания, что в ошибке говорится только о отсутвующих файлах.
+// Я надеюсь что так и должно работать.
+@mixin font-face($file, $family, $weight: "normal", $folder: "/fonts/") {
+  @font-face {
+    font-family: $family;
+    src: url("#{$folder}#{$file}.eot?#iefix") format('embedded-opentype'),
+    url("#{$folder}#{$file}.woff") format('woff'),
+    url("#{$folder}#{$file}.woff2") format('woff2'),
+    url("#{$folder}#{$file}.ttf") format('truetype');
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+
 // resets
 // total reset of everything
 @mixin reset() {

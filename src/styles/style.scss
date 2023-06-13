@@ -1,44 +1,6 @@
 @import "layout/layout.scss";
 @include reset();
 
-
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-// Include breakpoints badge
-// body { @include screen-media(); }
-
-// Import media-query helper
-// @import "../../node_modules/include-media/dist/_include-media.scss";
-
 $breakpoints: ('xxxs': 360px,
   'xxs': 480px,
   'xs': 640px,
@@ -49,3 +11,29 @@ $breakpoints: ('xxxs': 360px,
   'xxlg': 1440px,
   'xxxlg': 1680px,
   'xxxxlg': 1920px);
+
+// fonts
+@include font-face("Gilroy-Regular", "GR");
+@include font-face("Gilroy-Bold", "GB");
+@include font-face("Gilroy-ExtraBold", "GEB");
+@include font-face("Gilroy-Medium", "GM");
+@include font-face("Gilroy-SemiBold", "GSM");
+@include font-face("Nunito-SansRegular", "NSR");
+@include font-face("Inter-Medium", "IM");
+
+// Import BEM blocks scss
+@import "../blocks/**/*.scss";
+
+body,
+html {
+  box-sizing: border-box;
+  font-size: #{$basesize}px;
+  line-height: 1.2;
+  // font-family: sans-serif;
+  font-family: "GR", sans-serif;
+  background-color: #f2f2f2;
+  color: #{$text};
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
