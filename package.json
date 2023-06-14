@@ -12,6 +12,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "bemtree-from-html": "^1.0.10",
+    "include-media": "^2.0.0",
     "sass": "^1.63.2",
     "vite": "^4.3.9",
     "vite-plugin-html-inject": "^1.0.1",

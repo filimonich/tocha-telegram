@@ -1,6 +1,14 @@
 @import "layout/layout.scss";
 @include reset();
 
+// Import media-query helper
+@import "../../node_modules/include-media/dist/_include-media.scss";
+
+// Include breakpoints badge
+body {
+  @include screen-media();
+}
+
 $breakpoints: ('xxxs': 360px,
   'xxs': 480px,
   'xs': 640px,
@@ -36,4 +44,17 @@ html {
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
+}
+
+body {
+  padding-top: 95px;
+
+  @include media('<=xs') {
+    padding-top: 80px;
+  }
+
+  @include media('<=xxs') {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
 }
