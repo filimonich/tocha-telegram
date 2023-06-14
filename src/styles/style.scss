@@ -1,13 +1,13 @@
 @import "layout/layout.scss";
 @include reset();
 
-// Import media-query helper
-@import "../../node_modules/include-media/dist/_include-media.scss";
-
 // Include breakpoints badge
 body {
   @include screen-media();
 }
+
+// Import media-query helper
+@import "../../node_modules/include-media/dist/_include-media.scss";
 
 $breakpoints: ('xxxs': 360px,
   'xxs': 480px,
@@ -19,6 +19,11 @@ $breakpoints: ('xxxs': 360px,
   'xxlg': 1440px,
   'xxxlg': 1680px,
   'xxxxlg': 1920px);
+
+@import "../../node_modules/animate-scss/_properties.scss",
+"../../node_modules/animate-scss/_sliding-entrances/sliding-entrances.scss"
+, "../../node_modules/animate-scss/_attention-seekers/_bounce.scss";
+
 
 // fonts
 @include font-face("Gilroy-Regular", "GR");

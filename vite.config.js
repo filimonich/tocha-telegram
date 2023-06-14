@@ -1,7 +1,28 @@
-import injectHTML from 'vite-plugin-html-inject';
+// import injectHTML from 'vite-plugin-html-inject';
+// import sassGlobImports from 'vite-plugin-sass-glob-import';
+
+// export default {
+//   root: './src',
+//   publicDir: './../public',
+//   build: {
+//     outDir: './../docs',
+//     emptyOutDir: true,
+//     rollupOptions: {
+//       input: {
+//         main: '/index.html',
+//         other: '/pages/modal.html',
+//       },
+//     },
+//   },
+
+//   plugins: [injectHTML(), sassGlobImports()],
+// };
+
+import { defineConfig } from 'vite';
+import injectHtml from 'vite-plugin-html-inject';
 import sassGlobImports from 'vite-plugin-sass-glob-import';
 
-export default {
+export default defineConfig({
   root: './src',
   publicDir: './../public',
   build: {
@@ -15,5 +36,5 @@ export default {
     },
   },
 
-  plugins: [injectHTML(), sassGlobImports()],
-};
+  plugins: [injectHtml(), sassGlobImports()],
+});

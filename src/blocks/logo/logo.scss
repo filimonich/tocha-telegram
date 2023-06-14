@@ -1,12 +1,20 @@
 .logo {
-	$self: &;
+  $self: &;
+  // display: none;
+  display: block;
+  width: 100px;
+  height: auto;
+  background-color: $violet-n;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
 
-	&__img {
+  &.bounce {
+    @include bounce;
+  }
 
-	}
+  &__img {}
 
-	&__title {
-
-	}
+  &__title {}
 
 }

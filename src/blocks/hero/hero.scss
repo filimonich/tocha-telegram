@@ -1,28 +1,18 @@
 .hero {
-	$self: &;
+  $self: &;
+  width: 1140px;
+  margin: 0 auto;
 
-	&__title {
+  &__title {}
 
-	}
+  &__main {}
 
-	&__main {
+  &__text {}
 
-	}
+  &__button {}
 
-	&__text {
+  &__picture {}
 
-	}
-
-	&__button {
-
-	}
-
-	&__picture {
-
-	}
-
-	&__img {
-
-	}
+  &__img {}
 
 }
