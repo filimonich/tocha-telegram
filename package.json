@@ -21,7 +21,7 @@
     "normalize.css": "^8.0.1"
   },
   "bemtree": {
-    "from": "src/**/*.html",
+    "from": "./src/**/!(_%temp)*.html",
     "to": "src/blocks",
     "js": "src/js/blocks.js",
     "omit": "@@,js-,active,opened,showed,mt,mb,swiper,desk,focused"
