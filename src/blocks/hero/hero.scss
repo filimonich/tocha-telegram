@@ -1,7 +1,7 @@
 .hero {
   $self: &;
-  width: 1140px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   &__title {}
 
