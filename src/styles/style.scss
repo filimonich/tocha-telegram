@@ -52,14 +52,9 @@ html {
 }
 
 body {
-  padding-top: 95px;
+  padding-top: 34px;
 
   @include media('<=xs') {
-    padding-top: 80px;
-  }
-
-  @include media('<=xxs') {
-    padding-top: 60px;
-    padding-bottom: 50px;
+    padding-top: 32px;
   }
 }

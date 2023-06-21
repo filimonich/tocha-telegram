@@ -1,10 +1,17 @@
 .menu {
   $self: &;
 
-  &__list {}
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 50px;
+  }
 
   &__item {}
 
-  &__link {}
+  &__link {
+    text-decoration: none;
+  }
 
 }

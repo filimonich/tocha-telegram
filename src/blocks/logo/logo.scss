@@ -9,6 +9,10 @@
   animation-fill-mode: both;
   animation-delay: 0.5s;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &.bounce {
     @include bounce;
   }
