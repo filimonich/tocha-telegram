@@ -1,18 +1,27 @@
 .hero {
   $self: &;
 
-  &__content {}
+  &__content {
+    display: flex;
+    position: relative;
+  }
 
-  &__title {}
+  &__picture {
+    position: absolute;
+    right: 10px;
+  }
+
+  &__img {}
+
+  &__title {
+    position: relative;
+    width: 50%;
+  }
 
   &__main {}
 
   &__text {}
 
   &__button {}
-
-  &__picture {}
-
-  &__img {}
 
 }
