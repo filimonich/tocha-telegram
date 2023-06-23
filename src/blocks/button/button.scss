@@ -1,4 +1,20 @@
 .button {
-	$self: &;
+  $self: &;
+
+
+  /* Общие стили для всех кнопок */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+
+  &_color_red {
+    background-color: red;
+  }
+
+  &_text_color_white &__text {
+    color: white;
+  }
 
 }

@@ -1,8 +1,5 @@
 .logo {
   $self: &;
-  // display: none;
-  display: block;
-  width: 100px;
   height: auto;
   display: flex;
   justify-content: center;
@@ -12,5 +9,9 @@
 
   &__title {
     text-decoration: none;
+    color: $black;
+    font-size: 28px;
+    font-family: "GB", sans-serif;
+    line-height: 21px;
   }
 }
