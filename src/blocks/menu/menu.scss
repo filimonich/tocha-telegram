@@ -1,17 +1,14 @@
 .menu {
   $self: &;
+  width: 50%;
 
   &__list {
     display: flex;
     justify-content: space-between;
-    list-style: none;
     // margin-right: 50px;
   }
 
   &__item {}
 
-  &__link {
-    text-decoration: none;
-  }
-
+  &__link {}
 }

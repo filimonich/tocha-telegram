@@ -1,14 +1,20 @@
 .hero {
   $self: &;
 
+  &__container {
+    margin-top: 32px;
+  }
+
   &__content {
     display: flex;
-    position: relative;
+    // position: relative;
   }
 
   &__picture {
     position: absolute;
-    right: 10px;
+    top: 167px;
+    right: 0;
+    width: 60%;
   }
 
   &__img {}
@@ -16,9 +22,10 @@
   &__title {
     position: relative;
     width: 50%;
+    margin-bottom: 285px;
   }
 
-  &__main {}
+  &__headline {}
 
   &__text {}
 

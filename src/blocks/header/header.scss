@@ -1,6 +1,11 @@
 .header {
   $self: &;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
+  position: relative;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  // margin: 32px 0 126px;
+  margin: 0 0 126px;
+  z-index: 1;
 }

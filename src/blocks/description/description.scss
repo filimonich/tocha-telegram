@@ -1,48 +1,30 @@
 .description {
-	$self: &;
+  $self: &;
 
-	&__headline {
+  &__container {
+    margin-top: 96px;
+  }
 
-	}
+  &__headline {}
 
-	&__content {
+  &__content {}
 
-	}
+  &__benefits {}
 
-	&__benefits {
+  &__benefit {}
 
-	}
+  &__benefit-images {}
 
-	&__benefit {
+  &__benefit-img {}
 
-	}
+  &__text {}
 
-	&__benefit-images {
+  &__title {}
 
-	}
+  &__desc {}
 
-	&__benefit-img {
+  &__pic {}
 
-	}
-
-	&__text {
-
-	}
-
-	&__title {
-
-	}
-
-	&__desc {
-
-	}
-
-	&__pic {
-
-	}
-
-	&__img {
-
-	}
+  &__img {}
 
 }

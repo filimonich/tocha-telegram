@@ -51,10 +51,10 @@ html {
   flex-flow: column nowrap;
 }
 
-body {
-  padding-top: 34px;
+// body {
+  //   padding-top: 34px;
 
-  @include media('<=xs') {
-    padding-top: 32px;
-  }
-}
+  //   @include media('<=xs') {
+  //     padding-top: 32px;
+  //   }
+  // }
