@@ -25,10 +25,33 @@
     margin-bottom: 285px;
   }
 
-  &__headline {}
+  &__headline {
+    color: $text;
+    font-size: 50px;
+    font-family: "GEB", sans-serif;
+    line-height: 60px;
+    max-width: 383px;
+    margin-bottom: 24px;
 
-  &__text {}
+    span {
+      color: $violet;
+    }
+  }
+
+  &__text {
+    color: $text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+    font-family: "GR";
+    line-height: 34px;
+    max-width: 482px;
+    margin-bottom: 33px;
+
+    span {
+      color: $violet;
+      font-family: "GEB";
+    }
+  }
 
   &__button {}
-
 }

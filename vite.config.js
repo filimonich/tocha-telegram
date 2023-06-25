@@ -23,7 +23,6 @@ import injectHtml from 'vite-plugin-html-inject';
 import sassGlobImports from 'vite-plugin-sass-glob-import';
 
 export default defineConfig({
-  base: '',
   root: './src',
   publicDir: './../public',
   build: {

@@ -1,2 +1,1 @@
-
-import "../blocks/menu/menu.js";
+import "../blocks/modal/modal.js";

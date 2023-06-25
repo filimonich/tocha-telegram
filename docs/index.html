@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tocha Telegram</title>
   
-  <script type="module" crossorigin src="./assets/main-7d834169.js"></script>
-  <link rel="stylesheet" href="./assets/index-3c6b690f.css">
+  <script type="module" crossorigin src="/assets/main-51d964fa.js"></script>
+  <link rel="stylesheet" href="/assets/index-fa37f9bc.css">
 </head>
 
 <body class="wrapper">
@@ -19,14 +19,41 @@
           <img src="images/logo.png" alt="logo">
           <span class="logo__title">tocha</span>
         </a>
-        <nav class="menu menu-js">
+        <!-- <nav class="menu">
           <ul class="menu__list ">
             <li class="menu__item"><a href="" class="menu__link">Подключение</a></li>
             <li class="menu__item"><a href="" class="menu__link">Оплата</a></li>
             <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
             <li class="menu__item"><a href="" class="menu__link">Выход</a></li>
           </ul>
-        </nav>
+        </nav> -->
+        <div class="header__buttons">
+          <button class="button header__button header__login">
+            <span class="button__text">Вход</span>
+          </button>
+          <button class="button header__button header__registration">
+            <span class="button__text">Регистрация</span>
+          </button>
+        </div>
+        <div class="modal modal-js">
+  <div class="modal__content">
+    <button class="modal__close-button">
+      <img src="images/button-close.svg" alt="close the modal window" class="modal__img modal__close-img">
+    </button>
+    <h2 class="modal__title">Вход</h2>
+    <form class="modal__form">
+      <input class="modal__input" id="phone" type="tel" placeholder="Телефон" required>
+      <input class="modal__input" id="password" type="password" placeholder="Пароль" required>
+      <button class="modal__toggle-password">
+        <img src="images/eye-close.svg" alt="show or hide" class="modal__img modal__toggle-img">
+      </button>
+      <a class="modal__forgot-password" href="#">Напомнить пароль</a>
+      <button class="button">
+        <span class="button__text">Вход</span>
+      </button>
+    </form>
+  </div>
+</div>
       </header>
       <div class="hero__content">
         <div class="hero__picture">
@@ -34,14 +61,21 @@
         </div>
         <div class="hero__title">
           <h1 class="hero__headline">
-            <span class="hero__headline-span hero__headline-span_text_color">
-              Telegram чат
+            <span>
+              Telegram чат<br>
             </span>на вашем сайте
           </h1>
-          <p class="hero__text">Общение с клиентами станет простым и удобным, а подключение займет 5 минут. Первый
-            месяц <span class="hero__text-span hero__text-span_text_color">— бесплатно</span>
+          <p class="hero__text">
+            Общение с клиентами станет простым и удобным, а подключение займет 5 минут.
+            Первый месяц
+            <span>
+              — бесплатно
+            </span>
           </p>
-          <button class="hero__button button">Подключить</button>
+          <button class="button">
+            <span class="button__text">Подключить</span>
+          </button>
+
         </div>
       </div>
     </div>
@@ -283,7 +317,7 @@
             <h3 class="footer__subtitle">Поддержка</h3>
             <ul class="footer__list">
               <li class="footer__item"><a href="" class="footer__link">Центр поддержки</a></li>
-              <li class="footer__item"><a href="" class="footer__link">Политика конфеденциальности</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Политика конфиденциальности</a></li>
               <li class="footer__item"><a href="" class="footer__link">Документы оферты</a></li>
               <li class="footer__item"><a href="" class="footer__link">Обратная связь и предложения</a></li>
               <li class="footer__item"><a href="" class="footer__link">Статус</a></li>
