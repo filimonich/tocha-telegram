@@ -2,9 +2,7 @@
   const openButton = document.querySelector('.header__button-login');
   const closeButton = document.querySelector('.modal__close-button');
   const modal = document.querySelector('.modal');
-  const togglePasswordButton = document.querySelector(
-    '.modal__toggle-password'
-  );
+  const togglePasswordButton = document.querySelector('.modal__toggle-password');
   const passwordInput = document.querySelector('#password');
   const imgElement = document.querySelector('.modal__toggle-img');
 
