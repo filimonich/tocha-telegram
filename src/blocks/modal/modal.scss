@@ -105,11 +105,11 @@
       position: absolute;
       width: 24px;
       height: 24px;
-      background: url(images/eye-close.svg)
+      background: url(/images/eye-close.svg)
     }
 
     .modal__input[type="text"]+&::before {
-      background: url(images/eye-open.svg)
+      background: url(/images/eye-open.svg)
     }
   }
 
