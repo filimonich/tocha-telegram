@@ -1,28 +1,13 @@
 .button {
   $self: &;
 
-  padding: 12px 32px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
-  background-color: $violet;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
-  transition: background-color 0.2s ease-out, text-shadow 0.2s ease-out;
-
-  &:hover {
-    background-color: $btn-h;
-    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.14);
-  }
-
-  &:active {
-    background-color: $btn-a;
-    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.14);
-  }
 
   &__text {
     font-size: 18px;
-    color: $white;
     text-decoration: none;
     font-family: "GB";
     line-height: 24px;

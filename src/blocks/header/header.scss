@@ -10,5 +10,39 @@
 
   &__buttons {}
 
-  &__button {}
+  &__button {
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-out;
+
+    &:first-child {
+      margin-right: 12px;
+    }
+  }
+
+  &__button-login {
+    background-color: $violet-n;
+    color: $violet;
+
+    &:hover {
+      background-color: $violet-h;
+    }
+
+    &:active {
+      background-color: $btn-a;
+      color: $white;
+    }
+  }
+
+  &__button-registration {
+    background-color: $violet;
+    color: $white;
+
+    &:hover {
+      background-color: $btn-h;
+    }
+
+    &:active {
+      background-color: $btn-a;
+    }
+  }
 }

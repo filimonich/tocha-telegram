@@ -1,5 +1,5 @@
 (() => {
-  const openButton = document.querySelector('.header__login');
+  const openButton = document.querySelector('.header__button-login');
   const closeButton = document.querySelector('.modal__close-button');
   const modal = document.querySelector('.modal');
   const togglePasswordButton = document.querySelector(
