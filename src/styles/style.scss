@@ -31,7 +31,7 @@ $breakpoints: ('xxxs': 360px,
 @include font-face("Gilroy-ExtraBold", "GEB");
 @include font-face("Gilroy-Medium", "GM");
 @include font-face("Gilroy-SemiBold", "GSM");
-@include font-face("Nunito-SansRegular", "NSR");
+@include font-face("Nunito-Sans-Regular", "NSR");
 @include font-face("Inter-Medium", "IM");
 
 // Import BEM blocks scss
@@ -49,6 +49,37 @@ html {
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
+}
+
+.button-violet {
+  background-color: $violet;
+  color: $white;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+  transition: background-color 0.2s ease-out, text-shadow 0.2s ease-out;
+
+  &:hover {
+    background-color: $btn-h;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.14);
+  }
+
+  &:active {
+    background-color: $btn-a;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.14);
+  }
+}
+
+.button-violet-n {
+  background-color: $violet-n;
+  color: $violet;
+
+  &:hover {
+    background-color: $violet-h;
+  }
+
+  &:active {
+    background-color: $btn-a;
+    color: $white;
+  }
 }
 
 // body {

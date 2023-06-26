@@ -18,31 +18,4 @@
       margin-right: 12px;
     }
   }
-
-  &__button-login {
-    background-color: $violet-n;
-    color: $violet;
-
-    &:hover {
-      background-color: $violet-h;
-    }
-
-    &:active {
-      background-color: $btn-a;
-      color: $white;
-    }
-  }
-
-  &__button-registration {
-    background-color: $violet;
-    color: $white;
-
-    &:hover {
-      background-color: $btn-h;
-    }
-
-    &:active {
-      background-color: $btn-a;
-    }
-  }
 }
