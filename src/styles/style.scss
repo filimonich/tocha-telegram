@@ -31,7 +31,8 @@ $breakpoints: ('xxxs': 360px,
 @include font-face("Gilroy-ExtraBold", "GEB");
 @include font-face("Gilroy-Medium", "GM");
 @include font-face("Gilroy-SemiBold", "GSM");
-@include font-face("Nunito-Sans-Regular", "NSR");
+@include font-face("NunitoSans-Regular", "NSR");
+@include font-face("AlegreyaSans-Regular", "ASR");
 @include font-face("Inter-Medium", "IM");
 
 // Import BEM blocks scss
