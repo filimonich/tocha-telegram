@@ -16,6 +16,31 @@
     top: 167px;
     right: 0;
     width: 60%;
+    z-index: 2;
+
+    &::after {
+      content: "";
+      background: url(/images/Turquoise-Circle.svg) no-repeat;
+      top: -50px;
+      left: 130px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      filter: blur(80px);
+      z-index: -1;
+    }
+
+    &::before {
+      content: "";
+      background: url(/images/Purple-Circle-2.svg) no-repeat;
+      top: 160px;
+      left: 280px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      filter: blur(80px);
+      z-index: -1;
+    }
   }
 
   &__img {}
