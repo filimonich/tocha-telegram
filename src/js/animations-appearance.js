@@ -26,13 +26,25 @@ export function textPrinting(textContent, brCreate, i, className) {
   return i; // возврат текущего значения i
 }
 
-// создать экземпляр класса IntersectionObserver для отслеживания
-// пересечения элементов с viewport
-const observer = new IntersectionObserver(handleIntersect);
+// новый экземпляр класса Map для хранения соответствия между
+// элементами и экземплярами класса IntersectionObserver
+const observerMap = new Map();
 
-export function observeContainers(containers) {
-  // наблюдение за элементами
-  containers.forEach(content => observer.observe(content));
+// Экспорт функции observeContainers
+export function observeContainers(containers, selectors) {
+  // итерация по списку элементов containers
+  containers.forEach(content => {
+    // создать новый экземпляр класса IntersectionObserver для отслеживания
+    // пересечения элемента content с областью просмотра (viewport)
+    const observer = new IntersectionObserver(entries =>
+      handleIntersect(entries, selectors)
+    );
+    // сохранить соответствие между элементом content и экземпляром 
+    // класса IntersectionObserver в экземпляре класса Map
+    observerMap.set(content, observer);
+    // отслеживать пересечения элемента content с областью просмотра
+    observer.observe(content);
+  });
 }
 
 function handleIntersect(entries, selectors) {

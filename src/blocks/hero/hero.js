@@ -12,6 +12,7 @@ import {
   const selectors = '.hero__title, .header, .hero__picture';
 
   observeContainers(containers, selectors);
+
   // Вызываем функцию observeContents для начала наблюдения за элементами containers
   setTimeout(() => {
     i = textPrinting(textContent, content, i, className);
