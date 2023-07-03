@@ -1,48 +1,28 @@
 .rates {
-	$self: &;
+  $self: &;
 
-	&__container {
+  &__container {}
 
-	}
+	&__contents {}
 
-	&__headline {
+  &__headline {}
 
-	}
+  &__content {}
 
-	&__content {
+  &__benefits {}
 
-	}
+  &__benefit {}
 
-	&__benefits {
+  &__benefit-content {}
 
-	}
+  &__text {}
 
-	&__benefit {
+  &__aside {}
 
-	}
+  &__subtitle {}
 
-	&__benefit-content {
+  &__desc {}
 
-	}
-
-	&__text {
-
-	}
-
-	&__aside {
-
-	}
-
-	&__subtitle {
-
-	}
-
-	&__desc {
-
-	}
-
-	&__button {
-
-	}
+  &__button {}
 
 }
