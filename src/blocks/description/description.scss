@@ -5,6 +5,12 @@
     margin-top: 96px;
   }
 
+  &__contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__headline {}
 
   &__content {}

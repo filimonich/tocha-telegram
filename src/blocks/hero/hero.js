@@ -4,7 +4,7 @@ import { textPrinting, observeContainers, containers } from '/js/animations-appe
   const textContent = 'Telegram чат\nна вашем сайте';
   const content = document.querySelector('.hero__headline');
   let i = 0;
-  const className = 'telegram-chat';
+  const className = 'headline-text';
   const selectors = '.hero__title, .header, .hero__picture';
 
   observeContainers(containers, selectors);
