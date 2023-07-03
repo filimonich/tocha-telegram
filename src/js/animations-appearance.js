@@ -20,8 +20,8 @@ export function textPrinting(textContent, brCreate, i, className) {
       // добавить span в spanCreate
     }
     i++; // увеличить индекс i на 1
-    setTimeout(() => textPrinting(textContent, brCreate, i, className), 100);
-    // вызов функции с задержкой
+    setTimeout(() => textPrinting(textContent, brCreate, i, className), 50);
+    // вызов функции с задержкой, скорость написания текста
   }
   return i; // возврат текущего значения i
 }

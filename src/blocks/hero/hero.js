@@ -1,4 +1,8 @@
-import { textPrinting, observeContainers, containers } from '/js/animations-appearance.js';
+import {
+  textPrinting,
+  observeContainers,
+  containers,
+} from '/js/animations-appearance.js';
 
 (() => {
   const textContent = 'Telegram чат\nна вашем сайте';
@@ -11,7 +15,7 @@ import { textPrinting, observeContainers, containers } from '/js/animations-appe
   // Вызываем функцию observeContents для начала наблюдения за элементами containers
   setTimeout(() => {
     i = textPrinting(textContent, content, i, className);
-  }, 3000);
+  }, 3000); // с задержкой в 3000 миллисекунд
 })();
 
 // добавляет классы "visible" поочередно к элементам для запуска анимаций
