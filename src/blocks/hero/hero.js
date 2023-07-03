@@ -31,6 +31,3 @@ import { textPrinting, observeContainers, containers } from '/js/animations-appe
 // setTimeout(() => {
 //   picture.classList.add('visible');
 // }, 2000); // задержка должна быть равной сумме продолжительностей первой и второй анимаций
-
-// (() => {
-// })();
