@@ -6,7 +6,12 @@
 	}
 
 	&__headline {
-
+    text-align: center;
+    color: $text;
+    font-size: 46px;
+    font-family: "GEB", sans-serif;
+    line-height: 64px;
+    margin-bottom: 16px;
 	}
 
 	&__content {
