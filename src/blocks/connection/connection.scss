@@ -1,61 +1,42 @@
 .connection {
-	$self: &;
+  $self: &;
 
-	&__container {
-
+  &__container {
+		margin-top: 100px;
 	}
 
-	&__headline {
+  &__headline {
     text-align: center;
     color: $text;
     font-size: 46px;
     font-family: "GEB", sans-serif;
     line-height: 64px;
     margin-bottom: 16px;
+  }
+
+  &__content {}
+
+  &__benefits {
+		display: flex;
+    text-align: center;
 	}
 
-	&__content {
+  &__benefit {}
 
-	}
+  &__caption {}
 
-	&__benefits {
+  &__lead {}
 
-	}
+  &__subtitle {}
 
-	&__benefit {
+  &__text {}
 
-	}
+  &__pic {}
 
-	&__caption {
+  &__img {}
 
-	}
+  &__input {}
 
-	&__lead {
-
-	}
-
-	&__subtitle {
-
-	}
-
-	&__text {
-
-	}
-
-	&__pic {
-
-	}
-
-	&__img {
-
-	}
-
-	&__input {
-
-	}
-
-	&__button {
-
-	}
+  &__button {}
 
 }
