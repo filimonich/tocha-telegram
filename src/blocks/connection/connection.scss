@@ -1,9 +1,10 @@
 .connection {
   $self: &;
+  z-index: 10;
 
   &__container.container {
-		margin-top: 100px;
-	}
+    margin-top: 100px;
+  }
 
   &__headline {
     text-align: center;
@@ -17,15 +18,42 @@
   &__content {}
 
   &__benefits {
-		display: flex;
+    display: flex;
     text-align: center;
-	}
+  }
 
-  &__benefit {}
+  &__benefit {
+    margin-right: 173px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
 
   &__caption {}
 
-  &__lead {}
+  &__lead {
+    position: relative;
+    text-align: center;
+    font-family: "GB";
+    font-size: 32px;
+    line-height: 32px;
+    color: $violet;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 79px;
+      height: 79px;
+      border-radius: 50%;
+      background-color: $violet-n;
+      z-index: -1;
+    }
+
+  }
 
   &__subtitle {}
 
