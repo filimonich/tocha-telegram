@@ -21,9 +21,9 @@
       content: "";
       position: absolute;
       top: 90px;
-      left: 0;
+      left: 2px;
       width: 100%;
-      height: 100%;
+      height: 16%;
       background: url(/images/lines.png) no-repeat;
     }
   }
@@ -34,14 +34,71 @@
   }
 
   &__benefit {
-    margin-right: 173px;
+    margin-right: 181px;
+
+    &:nth-child(2) {
+      margin-top: 67px;
+    }
 
     &:last-child {
       margin-right: 0px;
     }
+
+    position: relative;
+
+    &:nth-child(1)::after {
+      content: "";
+      position: absolute;
+      background: url(/images/Ellipse-14.svg) no-repeat;
+      left: -60px;
+      bottom: 42px;
+      position: absolute;
+      width: 75%;
+      height: 26%;
+      filter: blur(80px);
+      z-index: -1;
+    }
+
+    &:nth-child(2)::after {
+      content: "";
+      background: url(/images/Ellipse-15.svg) no-repeat;
+      left: -6px;
+      bottom: 231px;
+      position: absolute;
+      width: 55%;
+      height: 18%;
+      filter: blur(80px);
+      z-index: -1;
+    }
+
+    &:nth-child(2)::before {
+      content: "";
+      background: url(/images/Ellipse-16.svg) no-repeat;
+      left: 120px;
+      bottom: 40px;
+      position: absolute;
+      width: 56%;
+      height: 21%;
+      filter: blur(80px);
+      z-index: -1;
+    }
+
+    &:nth-child(3)::after {
+      content: "";
+      background: url(/images/Ellipse-13.svg) no-repeat;
+      left: -31px;
+      bottom: 55px;
+      position: absolute;
+      width: 92%;
+      height: 27%;
+      filter: blur(80px);
+      z-index: -1;
+    }
   }
 
-  &__caption {}
+  &__caption {
+    margin-bottom: 45px;
+  }
 
   &__lead {
     position: relative;
@@ -66,9 +123,23 @@
 
   }
 
-  &__subtitle {}
+  &__subtitle {
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: "GB";
+    font-size: 19px;
+    line-height: 29px;
+    color: $text;
+  }
 
-  &__text {}
+  &__text {
+    margin-bottom: 26px;
+    text-align: center;
+    font-family: "GR";
+    font-size: 17px;
+    line-height: 27px;
+    color: $text;
+  }
 
   &__pic {}
 
