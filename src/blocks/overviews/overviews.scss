@@ -1,12 +1,28 @@
 .overviews {
-	$self: &;
+  $self: &;
 
-	&__container {
+  &__container {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
 
-	}
+  &__headline {
+    text-align: center;
+    font-family: "GEB";
+    font-size: 46px;
+    line-height: 64px;
+    color: $text;
+    margin-bottom: 48px;
 
-	&__headline {
-
-	}
-
+    &::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      right: 2px;
+      width: 13%;
+      height: 29%;
+      background: url(/images/marks.svg) no-repeat;
+    }
+  }
+	
 }
