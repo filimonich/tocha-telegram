@@ -1,40 +1,48 @@
 .footer {
-	$self: &;
+  $self: &;
+  background: $text;
 
-	&__container {
+  &__container {}
 
-	}
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1110px;
+    position: relative;
+  }
 
-	&__nav {
+  &__wrap {
+    margin-top: 111px;
+    display: flex;
+  }
 
-	}
+  &__inner {
+    margin-right: 116px;
 
-	&__wrap {
+    &:last-child {
+      margin-right: 157px;
+    }
+  }
 
-	}
+  &__subtitle {}
 
-	&__inner {
+  &__list {}
 
-	}
+  &__item {}
 
-	&__subtitle {
+  &__link {}
 
-	}
+  &__copyright {
+    background: $bg-black;
+  }
 
-	&__list {
-
-	}
-
-	&__item {
-
-	}
-
-	&__link {
-
-	}
-
-	&__copyright {
-
-	}
+  &__copyright-container {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1110px;
+    position: relative;
+  }
 
 }
