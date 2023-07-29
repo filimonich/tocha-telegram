@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tocha Telegram</title>
   
-  <script type="module" crossorigin src="./assets/main-a455ffe7.js"></script>
-  <link rel="stylesheet" href="./assets/index-a5441fc9.css">
+  <script type="module" crossorigin src="./assets/main-d51e4d3e.js"></script>
+  <link rel="stylesheet" href="./assets/index-128e11df.css">
 </head>
 
 <body class="wrapper">
@@ -20,7 +20,7 @@
           <img src="images/logo.png" alt="logo">
           <span class="logo__title">tocha</span>
         </a>
-        <nav class="menu" style="display: none;">
+        <nav class="menu">
           <ul class="menu__list ">
             <li class="menu__item"><a href="" class="menu__link">Подключение</a></li>
             <li class="menu__item"><a href="" class="menu__link">Оплата</a></li>
@@ -28,7 +28,7 @@
             <li class="menu__item"><a href="" class="menu__link">Выход</a></li>
           </ul>
         </nav>
-        <div class="header__buttons">
+        <div class="header__buttons" style="display: none;">
           <button class="button header__button header__button-login button-violet-n">
             <span class="button__text">Вход</span>
           </button>
@@ -65,14 +65,11 @@
             </span>на вашем сайте -->
           </h1>
           <p class="hero__text">
-            Общение с клиентами станет простым и удобным, а подключение займет 5 минут.
-            Первый месяц —
-            <span>
-              бесплатно
-            </span>
+            Общение&nbsp;с&nbsp;клиентами&nbsp;станет простым и&nbsp;удобным, а&nbsp;подключение&nbsp;займет 5 минут.
+            Первый&nbsp;месяц&nbsp;—&nbsp;<span>бесплатно</span>
           </p>
           <button class="button hero__button button-violet">
-            <span class="button__text">Подключить</span>
+            <span class="button__text hero__text-btn">Подключить</span>
           </button>
 
         </div>
@@ -88,10 +85,10 @@
           <h2 class="description__headline">Tocha Online — это</h2>
           <ul class="description__benefits">
             <li class="description__benefit">
-              <a href="" class="description__benefit-images">
+              <div href="" class="description__benefit-images">
                 <!-- <img class="description__benefit-img"></img> -->
                 <img class="description__benefit-img" src="images/Group.svg" alt="paper airplane">
-              </a>
+              </div>
               <div class="description__text">
                 <h3 class="description__title">Ничего лишнего</h3>
                 <div class="description__desc">
@@ -100,10 +97,10 @@
               </div>
             </li>
             <li class="description__benefit">
-              <a href="" class="description__benefit-images">
+              <div href="" class="description__benefit-images">
                 <!-- <svg class="description__benefit-img"></svg> -->
                 <img class="description__benefit-img" src="images/Simplicity.svg" alt="suitcase and up arrows">
-              </a>
+              </div>
               <div class="description__text">
                 <h3 class="description__title">Простота</h3>
                 <div class="description__desc">
@@ -112,10 +109,10 @@
               </div>
             </li>
             <li class="description__benefit">
-              <a href="" class="description__benefit-images">
+              <div href="" class="description__benefit-images">
                 <!-- <svg class="description__benefit-img"></svg> -->
                 <img class="description__benefit-img" src="images/Frame.svg" alt="assistant">
-              </a>
+              </div>
               <div class="description__text">
                 <h3 class="description__title">Несколько ассистентов</h3>
                 <div class="description__desc">
@@ -124,10 +121,10 @@
               </div>
             </li>
             <li class="description__benefit">
-              <a href="" class="description__benefit-images">
+              <div href="" class="description__benefit-images">
                 <!-- <svg class="description__benefit-img"></svg> -->
                 <img class="description__benefit-img" src="images/Customization.svg" alt="customization">
-              </a>
+              </div>
               <div class="description__text">
                 <h3 class="description__title">Кастомизация</h3>
                 <div class="description__desc">
@@ -258,7 +255,7 @@
                 <div class="overviews-slider__text">
                   <p class="overviews-slider__name">Анна Купер</p>
                   <p class="overviews-slider__link">
-                    <a href="https://romashka.ru">romashka.ru</a>
+                    <a href="https://romashka.ru" target="_blank">romashka.ru</a>
                   </p>
                 </div>
               </div>
@@ -281,7 +278,7 @@
                 <div class="overviews-slider__text">
                   <p class="overviews-slider__name">Андрей Васильев</p>
                   <p class="overviews-slider__link">
-                    <a href="https://samogon-ont.ru">samogon-ont.ru</a>
+                    <a href="https://samogon-ont.ru" target="_blank">samogon-ont.ru</a>
                   </p>
                 </div>
               </div>
@@ -316,29 +313,29 @@
   <section class="footer">
     <footer class="footer__container">
       <div class="footer__nav">
-        <a href="./" class="logo">
-          <img src="images/logo.png" alt="">
-          <span class="logo__title">tocha</span>
+        <a href="./" class="logo footer__logo">
+          <img class="footer__img" src="images/logo.png" alt="">
+          <span class="logo__title footer__title">tocha</span>
         </a>
         <div class="footer__wrap">
           <div class="footer__inner">
             <h3 class="footer__subtitle">Telegram чат</h3>
             <ul class="footer__list">
-              <li class="footer__item"><a href="" class="footer__link">О нас</a></li>
-              <li class="footer__item"><a href="" class="footer__link">Партнёры</a></li>
-              <li class="footer__item"><a href="" class="footer__link">Инструкции</a></li>
-              <li class="footer__item"><a href="" class="footer__link">Цены</a></li>
-              <li class="footer__item"><a href="" class="footer__link">Контакты</a></li>
+              <li class="footer__item"><a href="" class="footer__link" target="_blank">О нас</a></li>
+              <li class="footer__item"><a href="" class="footer__link" target="_blank">Партнёры</a></li>
+              <li class="footer__item"><a href="" class="footer__link" target="_blank">Инструкции</a></li>
+              <li class="footer__item"><a href="" class="footer__link" target="_blank">Цены</a></li>
+              <li class="footer__item"><a href="" class="footer__link" target="_blank">Контакты</a></li>
             </ul>
           </div>
           <div class="footer__inner">
             <h3 class="footer__subtitle">Поддержка</h3>
             <ul class="footer__list">
-              <li class="footer__item"><a href="" class="footer__link">Центр поддержки</a></li>
-              <li class="footer__item"><a href="" class="footer__link">Политика конфиденциальности</a></li>
-              <li class="footer__item"><a href="" class="footer__link">Документы оферты</a></li>
-              <li class="footer__item"><a href="" class="footer__link">Обратная связь и предложения</a></li>
-              <li class="footer__item"><a href="" class="footer__link">Статус</a></li>
+              <li class="footer__item"><a href="" class="footer__link" target="_blank">Центр поддержки</a></li>
+              <li class="footer__item"><a href="" class="footer__link" target="_blank">Политика конфиденциальности</a></li>
+              <li class="footer__item"><a href="" class="footer__link" target="_blank">Документы оферты</a></li>
+              <li class="footer__item"><a href="" class="footer__link" target="_blank">Обратная связь и предложения</a></li>
+              <li class="footer__item"><a href="" class="footer__link" target="_blank">Статус</a></li>
             </ul>
           </div>
         </div>
