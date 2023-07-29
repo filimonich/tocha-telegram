@@ -42,7 +42,8 @@ $border-input:#E8E6F8;
 
 // показать текущий диапазон
 @mixin screen-media($color: #777) {
-  $breakpoints: (xxxxlg: 1920,
+  $breakpoints: (
+      xxxxlg: 1920,
       xxxlg: 1680,
       xxlg: 1440,
       xlg: 1280,
@@ -62,7 +63,8 @@ $border-input:#E8E6F8;
       text-align: center;
       position: fixed;
       top: 30px;
-      right: 5px;
+      // right: 5px;
+      left: 20%;
       z-index: 9999;
       min-height: 16px;
       min-width: 40px;

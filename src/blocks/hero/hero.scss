@@ -18,28 +18,48 @@
     width: 60%;
     // z-index: 2;
 
-    &::after {
-      content: "";
-      background: url(/images/Turquoise-Circle.svg) no-repeat;
-      top: -50px;
-      left: 130px;
-      position: absolute;
-      width: 20%;
-      height: 25%;
-      filter: blur(80px);
-      z-index: -1;
+    @include media('<=sm') {
+      top: 87px;
+      width: 420px;
+      height: 338px;
     }
 
     &::before {
       content: "";
-      background: url(/images/Purple-Circle-2.svg) no-repeat;
+      position: absolute;
+      background: url(/images/Purple-Circle-2.svg) no-repeat center/contain;
       top: 160px;
       left: 280px;
-      position: absolute;
-      width: 52%;
-      height: 47%;
+      width: 343px;
+      height: 257px;
       filter: blur(80px);
       z-index: -1;
+
+      @include media('<=sm') {
+        top: 80px;
+        left: 200px;
+        width: 182px;
+        height: 136px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url(/images/Turquoise-Circle.svg) no-repeat center/contain;
+      top: -50px;
+      left: 130px;
+      width: 133px;
+      height: 133px;
+      filter: blur(80px);
+      z-index: -1;
+
+      @include media('<=sm') {
+        top: -60px;
+        left: 100px;
+        left: 70px;
+        width: 70px;
+      }
     }
   }
 
@@ -50,16 +70,27 @@
     width: 50%;
     margin-bottom: 285px;
 
+    @include media('<=sm') {
+      margin-bottom: 73px;
+    }
+
     &::after {
       content: "";
-      background: url(/images/Purple-Circle.svg) no-repeat;
+      position: absolute;
+      background: url(/images/Purple-Circle.svg) no-repeat center/contain;
       top: 260px;
       left: -60px;
-      position: absolute;
-      width: 31%;
-      height: 37%;
+      width: 189px;
+      height: 142px;
       filter: blur(80px);
       z-index: -1;
+
+      @include media('<=sm') {
+        width: 100px;
+        height: 75px;
+        top: 260px;
+        left: -10px;
+      }
     }
   }
 
@@ -70,7 +101,14 @@
     line-height: 60px;
     max-width: 383px;
     margin-bottom: 24px;
-    height: 120px;
+    min-height: 120px;
+
+    @include media('<=sm') {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 32px;
+      min-height: 80px;
+    }
 
     .headline-text {
       color: $violet;
@@ -78,21 +116,36 @@
   }
 
   &__text {
-    color: $text;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 482px;
+    margin-bottom: 33px;
     font-size: 24px;
     font-family: "GR";
     line-height: 34px;
-    max-width: 482px;
-    margin-bottom: 33px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: $text;
 
     span {
       color: $violet;
       font-family: "GEB";
     }
+
+    @include media('<=sm') {
+      max-width: 270px;
+      margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 
   &__button {
     padding: 12px 32px;
+  }
+
+  &__text-btn {
+
+    @include media('<=sm') {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 }

@@ -8,6 +8,10 @@
   margin: 0 0 126px;
   z-index: 1;
 
+  @include media('<=sm') {
+    margin: 0 0 42px;
+  }
+
   &__buttons {}
 
   &__button {
@@ -16,6 +20,10 @@
 
     &:first-child {
       margin-right: 12px;
+      
+      @include media('<=sm') {
+        margin-right: 11px;        
+      }
     }
   }
 }

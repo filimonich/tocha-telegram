@@ -11,5 +11,10 @@
     text-decoration: none;
     font-family: "GB";
     line-height: 24px;
+
+    @include media('<=sm') {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
