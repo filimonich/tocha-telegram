@@ -2,6 +2,10 @@
   $self: &;
   width: 50%;
 
+  @include media('<=sm') {
+    width: 51.5%;
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
@@ -24,6 +28,9 @@
       text-shadow: $violet 0 0 1.6px;
     }
 
-    
+    @include media('<=sm') {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }
