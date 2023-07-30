@@ -3,7 +3,7 @@
 
   &__container {
     margin-top: 32px;
-    margin-bottom: 85px;
+    margin-bottom: 270px;
     z-index: 2;
 
     @include media('<=sm') {
@@ -18,7 +18,7 @@
 
   &__picture {
     position: absolute;
-    top: 167px;
+    top: 150px;;
     right: 0;
     width: 60%;
     // z-index: 2;
