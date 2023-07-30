@@ -23,7 +23,9 @@
     margin-bottom: 10px;
   }
 
-  &__title {}
+  &__title.logo__title {
+    color: $white;
+  }
 
   &__wrap {
     display: flex;
