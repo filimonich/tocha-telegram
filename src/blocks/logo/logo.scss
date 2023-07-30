@@ -5,6 +5,10 @@
   justify-content: center;
   align-items: center;
 
+  @include media('<=sm') {
+    margin-right: 2px;
+  }
+
   &__img {}
 
   &__title {
