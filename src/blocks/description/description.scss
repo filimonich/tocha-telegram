@@ -61,7 +61,7 @@
     margin-bottom: 48px;
     
     &:last-child {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
     
     @include media('<=sm') {

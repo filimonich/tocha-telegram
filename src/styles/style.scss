@@ -57,17 +57,17 @@ html {
 .button-violet {
   background-color: $violet;
   color: $white;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
   transition: background-color 0.2s ease-out, text-shadow 0.2s ease-out;
 
   &:hover {
     background-color: $btn-h;
-    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.14);
   }
 
   &:active {
     background-color: $btn-a;
-    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.14);
   }
 }
 

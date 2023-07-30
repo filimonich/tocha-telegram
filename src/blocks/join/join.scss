@@ -51,7 +51,7 @@
 
   &__input {
     padding: 14px 16px;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 0 0 5px;
 		border: 1px solid $white;
 		outline: none;
     font-family: "GR";
@@ -63,7 +63,7 @@
   &__button.button-violet {
 		max-height: 50px;
     padding: 14px 24px;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0 5px 5px 0;
     font-family: "GB";
     font-size: 14px;
     line-height: 20px;

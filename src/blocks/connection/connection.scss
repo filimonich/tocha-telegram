@@ -4,15 +4,27 @@
 
   &__container.container {
     margin-top: 100px;
+    margin-bottom: 124px;
+
+    @include media('<=sm') {
+      margin-top: 54px;
+      margin-bottom: 49px;
+    }
   }
 
   &__headline {
+    margin-bottom: 66px;
     text-align: center;
-    color: $text;
     font-size: 46px;
     font-family: "GEB", sans-serif;
     line-height: 64px;
-    margin-bottom: 66px;
+    color: $text;
+
+    @include media('<=sm') {
+      margin-bottom: 61px;
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
 
   &__content {
@@ -23,8 +35,16 @@
       top: 90px;
       left: 2px;
       width: 100%;
-      height: 16%;
-      background: url(/images/lines.png) no-repeat;
+      height: 30%;
+      background: url(/images/lines.png) no-repeat center/contain;
+
+      @include media('<=xlg') {
+        content: none;
+      }
+
+      @include media('<=sm') {
+        content: none;
+      }
     }
   }
 
@@ -34,63 +54,76 @@
   }
 
   &__benefit {
+    flex-shrink: 1;
+    position: relative;
     margin-right: 181px;
+    // margin-bottom: 30px;
+
+    @include media('<=xlg') {
+      margin-right: 10px;
+    }
+
+    @include media('<=sm') {
+      margin-right: 25px;
+    }
 
     &:nth-child(2) {
       margin-top: 67px;
+
+      @include media('<=sm') {
+        margin-top: 4px;
+      }
     }
 
     &:last-child {
-      margin-right: 0px;
+      margin-right: 0;
     }
 
-    position: relative;
 
     &:nth-child(1)::after {
       content: "";
       position: absolute;
-      background: url(/images/Ellipse-14.svg) no-repeat;
-      left: -60px;
+      background: url(/images/Ellipse-14.svg) no-repeat center/contain;
+      left: -20px;
       bottom: 42px;
-      position: absolute;
-      width: 75%;
-      height: 26%;
+      width: 100px;
+      height: 100px;
       filter: blur(80px);
       z-index: -1;
     }
 
     &:nth-child(2)::after {
       content: "";
-      background: url(/images/Ellipse-15.svg) no-repeat;
-      left: -6px;
-      bottom: 231px;
       position: absolute;
-      width: 55%;
-      height: 18%;
+      background: url(/images/Ellipse-15.svg) no-repeat center/contain;
+      left: -10px;
+      bottom: 130px;
+      width: 64px;
+      height: 64px;
       filter: blur(80px);
       z-index: -1;
     }
 
     &:nth-child(2)::before {
       content: "";
-      background: url(/images/Ellipse-16.svg) no-repeat;
-      left: 120px;
-      bottom: 40px;
+      background: url(/images/Ellipse-16.svg) no-repeat center/contain;
+      left: 150px;
+      bottom: -20px;
       position: absolute;
-      width: 56%;
-      height: 21%;
+      width: 75px;
+      height: 75px;
       filter: blur(80px);
       z-index: -1;
     }
 
     &:nth-child(3)::after {
       content: "";
-      background: url(/images/Ellipse-13.svg) no-repeat;
-      left: -31px;
+      background: url(/images/Ellipse-13.svg) no-repeat center/contain;
+      left: 9px;
       bottom: 55px;
       position: absolute;
-      width: 92%;
-      height: 27%;
+      width: 108px;
+      height: 110px;
       filter: blur(80px);
       z-index: -1;
     }
@@ -98,6 +131,11 @@
 
   &__caption {
     margin-bottom: 45px;
+
+    @include media('<=sm') {
+      margin-bottom: 36px;
+
+    }
   }
 
   &__lead {
@@ -114,8 +152,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 79px;
-      height: 79px;
+      width: 72px;
+      height: 72px;
       border-radius: 50%;
       background-color: $violet-n;
       z-index: -1;
@@ -130,6 +168,11 @@
     font-size: 19px;
     line-height: 29px;
     color: $text;
+
+    @include media('<=sm') {
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 
   &__text {
@@ -139,9 +182,25 @@
     font-size: 17px;
     line-height: 27px;
     color: $text;
+
+    @include media('<=sm') {
+      margin-bottom: 40px;
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
-  &__pic {}
+  &__pic {
+    min-width: 211px;
+
+    @include media('<=xlg') {
+      min-width: 212px;
+    }
+
+    // @include media('<=sm') {
+    //   min-width: 212px;
+    // }
+  }
 
   &__img {}
 
