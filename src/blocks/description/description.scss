@@ -3,6 +3,12 @@
 
   &__container {
     margin-top: 70px;
+    margin-bottom: 86px;
+
+    @include media('<=sm') {
+      margin-top: 60px;
+      margin-bottom: 62px;
+    }
   }
 
   &__contents {
@@ -11,33 +17,55 @@
 
     &:first-child {
       margin-right: 76px;
+
+      @include media('<=sm') {
+        margin-right: 0;
+      }
     }
   }
 
   &__content {
     margin-top: 23px;
+
+    @include media('<=sm') {
+      margin-top: 0;
+    }
   }
 
   &__headline {
-    color: $text;
+    max-width: 426px; // ?
+    margin-bottom: 68px;
     font-size: 48px;
     font-family: "GEB", sans-serif;
     line-height: 32px;
-    max-width: 426px; // ?
-    margin-bottom: 68px;
-  }
+    color: $text;
 
+    @include media('<=sm') {
+      max-width: 284px; // ?
+      margin-bottom: 40px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
 
   &__benefits {
     max-width: 522px;
+
+    @include media('<=sm') {
+      max-width: 388px;
+    }
   }
 
   &__benefit {
     display: flex;
     margin-bottom: 48px;
-
+    
     &:last-child {
       margin-bottom: 0px;
+    }
+    
+    @include media('<=sm') {
+      margin-bottom: 16px;
     }
   }
 
@@ -46,21 +74,35 @@
     display: flex;
     align-items: center;
 
+    @include media('<=sm') {
+      margin-right: 18px;
+    }
   }
 
   &__benefit-img {
     max-width: 68px;
     max-height: 68px;
+
+    @include media('<=sm') {
+      max-width: 42px;
+      max-height: 42px;
+    }
   }
 
   &__text {}
 
   &__title {
-    color: $text;
+    margin-bottom: 8px;
     font-size: 24px;
     font-family: "GSM", sans-serif;
     line-height: 32px;
-    margin-bottom: 8px;
+    color: $text;
+
+    @include media('<=sm') {
+      margin-bottom: 4px;
+      font-size: 20px;
+      line-height: 32px;
+    }
   }
 
   &__desc {
@@ -74,6 +116,9 @@
 
   &__img {
     max-width: 412px;
-    margin-bottom: 82px;
+
+    @include media('<=sm') {
+      max-width: 310px;
+    }
   }
 }
