@@ -12,6 +12,11 @@
 
     &:last-child {
       margin-right: 0;
+
+      @include media('<=sm') {
+        position: absolute;
+        right: -419px;
+      }
     }
   }
 
