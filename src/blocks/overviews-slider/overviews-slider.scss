@@ -4,6 +4,11 @@
   &__benefits {
     display: flex;
     text-align: center;
+
+    @include media('<=sm') {
+      margin-bottom: 16px;
+    }
+    
   }
 
   &__benefit {
@@ -29,6 +34,10 @@
     border-radius: 6px;
     border-color: black;
     box-shadow: 0 10px 20px rgba(41, 41, 42, 0.07);
+
+    @include media('<=sm') {
+      padding-top: 23px;
+    }
 
     &::before {
       content: "";
@@ -59,6 +68,10 @@
   &__person {
     display: flex;
     justify-content: center;
+
+    @include media('<=sm') {
+      margin-right: 50px;
+    }
   }
 
   &__pic {
