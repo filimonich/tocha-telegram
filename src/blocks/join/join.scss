@@ -57,7 +57,7 @@
 
   &__headline {
     // padding: 49px 187px 32px 480px;
-    // margin-bottom: 32px;
+    padding-bottom: 32px;
     font-family: "GEB";
     font-size: 33px;
     line-height: 41px;
@@ -73,11 +73,11 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    height: 52px;
-    // padding-right: 264px;
+    padding-right: 78px;
   }
 
   &__input {
+    width: 248px;
     padding: 14px 16px;
     border-radius: 5px 0 0 5px;
     border: 1px solid $white;
