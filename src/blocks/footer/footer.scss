@@ -20,6 +20,7 @@
   }
 
   &__img {
+    width: 80px;
     margin-bottom: 10px;
   }
 
@@ -32,10 +33,11 @@
   }
 
   &__inner {
-    margin-right: 116px;
+    margin-right: 165px;
 
     &:last-child {
-      margin-right: 157px;
+      width: 230px;
+      margin-right: 132px;
     }
   }
 
@@ -43,7 +45,7 @@
     margin-bottom: 32px;
     font-family: "GM";
     font-size: 20px;
-    line-height: 30px;
+    line-height: 21px;
     color: $h-text;
   }
 
@@ -86,5 +88,4 @@
     line-height: 24px;
     color: $c-text;
   }
-
 }
