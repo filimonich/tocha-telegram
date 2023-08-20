@@ -12,21 +12,49 @@
     width: 95%;
     max-width: 1110px;
     position: relative;
+
+    @include media('<=sm') {
+      margin: 61px auto 25px;
+      width: 89.7%;
+    }
   }
 
   &__logo {
     display: flex;
     flex-direction: column;
+
+    &.logo {
+      @include media('<=sm') {
+        margin-right: 153px;
+      }
+    }
   }
 
   &__img {
     width: 80px;
     margin-bottom: 10px;
+
+    @include media('<=sm') {
+      margin-bottom: 7px;
+      margin-left: 5px;
+      width: 78px;
+      height: 60px;
+    }
   }
 
-  &__title.logo__title {
-    color: $white;
+  &__title {
+
+    
+    &.logo__title {
+      color: $white;
+
+      @include media('<=sm') {
+        font-size: 32px;
+        line-height: 24px;
+      }
+    }
   }
+
 
   &__wrap {
     display: flex;
@@ -35,18 +63,29 @@
   &__inner {
     margin-right: 165px;
 
+    @include media('<=sm') {
+      margin-right: 59px;
+    }
+
     &:last-child {
       width: 230px;
       margin-right: 132px;
     }
+
   }
 
   &__subtitle {
     margin-bottom: 32px;
+    white-space: nowrap;
     font-family: "GM";
     font-size: 20px;
     line-height: 21px;
     color: $h-text;
+
+
+    @include media('<=sm') {
+      line-height: 30px;
+    }
   }
 
   &__list a {
