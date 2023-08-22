@@ -44,7 +44,7 @@
 
   &__title {
 
-    
+
     &.logo__title {
       color: $white;
 
@@ -126,5 +126,9 @@
     font-size: 14px;
     line-height: 24px;
     color: $c-text;
+
+    @include media('<=sm') {
+      margin: 0 5%;
+    }
   }
 }
