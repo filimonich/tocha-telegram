@@ -9,6 +9,8 @@
   // функция переключения модального окна
   const toggleModal = () => {
     modal.style.display = modal.style.display === 'block' ? 'none' : 'block';
+    // Отключаем горизонтальный скролл на странице, когда открыто модальное окно
+    document.body.style.overflow = modal.style.display === 'block' ? 'hidden' : '';
   };
   // добовляем обработчик событий при клике
   openButton.addEventListener('click', toggleModal);

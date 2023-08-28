@@ -45,7 +45,7 @@ html {
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-size: #{$basesize}px;
   line-height: 1.2;
   font-family: "GR", sans-serif;
