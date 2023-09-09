@@ -2,10 +2,12 @@
   $self: &;
 
   &__container {
-    margin-top: 100px;
+    // margin-top: 100px;
+    padding-top: 100px;
 
     @include media('<=sm') {
-      margin-top: 44px;
+      // margin-top: 44px;
+      padding-top: 100px;
     }
   }
 
