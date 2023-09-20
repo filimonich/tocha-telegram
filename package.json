@@ -7,7 +7,8 @@
     "start": "vite --open",
     "bem": "bemtree-from-html",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "push-build": "vite build && git add . && git commit -m 'refactor: update build(/docs)' && git push"
   },
   "dependencies": {
     "animate-scss": "^3.2.1",
