@@ -13,6 +13,16 @@
     margin: 0 0 42px;
   }
 
+  &__menu {
+    width: 50%;
+    // display: flex;
+    // align-items: center;
+
+    @include media('<=sm') {
+      width: 51.5%;
+    }
+  }
+
   &__buttons {}
 
   &__button {
@@ -21,9 +31,9 @@
 
     &:first-child {
       margin-right: 12px;
-      
+
       @include media('<=sm') {
-        margin-right: 11px;        
+        margin-right: 11px;
       }
     }
   }
