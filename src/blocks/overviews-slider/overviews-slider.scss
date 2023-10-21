@@ -21,6 +21,17 @@
       @include media('<=sm') {
         position: absolute;
         right: -419px;
+        // top: 0;
+        // transform: translateX(70%);
+      }
+    }
+
+    @include media('<=sm') {
+      display: none;
+      // margin-right: 14px;
+
+      &.active-slide {
+        display: block;
       }
     }
   }

@@ -19,6 +19,10 @@
 
     &:first-child {
       margin-right: 76px;
+      
+      @include media('<=lg') {
+        margin-right: auto;
+      }
 
       @include media('<=sm') {
         margin-right: 0;
@@ -28,6 +32,10 @@
 
   &__content {
     margin-top: 23px;
+
+    @include media('<=lg') {
+      width: 55%;
+    }
 
     @include media('<=sm') {
       margin-top: 0;
@@ -41,6 +49,11 @@
     font-family: "GEB", sans-serif;
     line-height: 32px;
     color: $text;
+
+    @include media('<=lg') {
+      z-index: 1;
+      position: relative;
+    }
 
     @include media('<=sm') {
       max-width: 284px; // ?
@@ -114,10 +127,20 @@
     line-height: 26px;
   }
 
-  &__pic {}
+  &__pic {
+
+    @include media('<=lg') {
+      width: 45%;
+    }
+  }
 
   &__img {
     max-width: 412px;
+    
+    @include media('<=lg') {
+      max-width: 100%;
+      // width: 45%;
+    }
 
     @include media('<=sm') {
       max-width: 310px;

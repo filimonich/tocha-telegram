@@ -7,7 +7,7 @@
 
     @include media('<=sm') {
       // margin-top: 44px;
-      padding-top: 100px;
+      padding-top: 44px;
     }
   }
 
@@ -104,6 +104,16 @@
     font-family: "GB", sans-serif;
     line-height: 40px;
     color: $text;
+
+    @include media('<=lg') {
+      padding: 0 10px;
+      font-size: 20px;
+    }
+
+    @include media('<=sm') {
+      padding: 0;
+      font-size: 28px;
+    }
   }
 
   &__desc {
@@ -123,6 +133,17 @@
     width: 270px;
     padding: 12px 32px;
     margin-bottom: 50px;
+
+    span {
+      @include media('<=lg') {
+        font-size: 16px;
+      }
+    }
+
+    @include media('<=lg') {
+      width: 100%;
+      font-size: 20px;
+    }
   }
 
   &__text-button {

@@ -27,9 +27,9 @@
       border-radius: 7px;
 
       @include media('<=sm') {
-        right: 2px;
-        width: 99.5%;
-        background: 40% 10%/260% url(/images/BG-Mask.svg) no-repeat;
+        right: 14px;
+        width: 98%;
+        background: 100% url(/images/BG-Mask.svg) no-repeat;
         border-radius: 7px;
       }
     }
@@ -49,8 +49,14 @@
       padding: 10% 10% 10% 50%;
     }
 
+    @include media('<=md') {
+      align-items: flex-start;
+      padding: 10% 10% 10% 45%;
+    }
+
     @include media('<=sm') {
-      padding: 48px 27px 89px 331px;
+      align-items: flex-end;
+      padding: 51px 27px 89px 331px;
     }
   }
 
@@ -61,6 +67,11 @@
     font-size: 33px;
     line-height: 41px;
     color: $white;
+
+    @include media('<=lg') {
+      font-size: 26px;
+      line-height: 32px;
+    }
 
     @include media('<=sm') {
       font-size: 24px;
@@ -79,7 +90,7 @@
     }
 
     @include media('<=sm') {
-      padding-right: 4px;
+      padding-right: 15px;
     }
   }
 

@@ -47,6 +47,9 @@
         width: 182px;
         height: 136px;
       }
+      @include media('<=xlg') {
+        left: 260px;
+      }
 
       @include media('<=sm') {
         top: 80px;
