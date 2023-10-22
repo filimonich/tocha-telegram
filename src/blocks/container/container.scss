@@ -11,4 +11,8 @@
   @include media('<=sm') {
     width: 90%;
   }
+
+  @include media('<=xs') {
+    width: 88%;
+  }
 }

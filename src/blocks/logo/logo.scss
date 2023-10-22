@@ -9,7 +9,12 @@
     margin-right: 2px;
   }
 
-  &__img {}
+  &__img {
+
+    @include media('<=xs') {
+      width: 42px;
+    }
+  }
 
   &__title {
     text-decoration: none;
@@ -17,5 +22,10 @@
     font-size: 28px;
     font-family: "GB", sans-serif;
     line-height: 21px;
+
+    @include media('<=xs') {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }

@@ -9,17 +9,26 @@
     @include media('<=sm') {
       margin-bottom: 73px;
     }
+
+    @include media('<=xs') {
+      margin-top: 32px;
+      margin-bottom: 10px;
+    }
   }
 
   &__content {
     display: flex;
     // position: relative;
+
+    @include media('<=xs') {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   &__picture {
     position: absolute;
     top: 150px;
-    ;
     right: 0;
     width: 60%;
     // z-index: 2;
@@ -28,6 +37,10 @@
       top: 87px;
       width: 420px;
       height: 338px;
+    }
+
+    @include media('<=xs') {
+      position: relative;
     }
 
     &::before {
@@ -47,6 +60,7 @@
         width: 182px;
         height: 136px;
       }
+
       @include media('<=xlg') {
         left: 260px;
       }
@@ -84,6 +98,11 @@
   &__title {
     position: relative;
     width: 50%;
+
+
+    @include media('<=xs') {
+      width: 100%;
+    }
 
     &::after {
       content: "";

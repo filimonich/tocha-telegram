@@ -13,6 +13,10 @@
     margin: 0 0 42px;
   }
 
+  @include media('<=xs') {
+    margin: 0 0 37px;
+  }
+
   &__menu {
     width: 50%;
     // display: flex;

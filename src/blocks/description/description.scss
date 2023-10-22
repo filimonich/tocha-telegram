@@ -19,7 +19,7 @@
 
     &:first-child {
       margin-right: 76px;
-      
+
       @include media('<=lg') {
         margin-right: auto;
       }
@@ -132,11 +132,15 @@
     @include media('<=lg') {
       width: 45%;
     }
+
+    @include media('<=lg') {
+      width: 100%;
+    }
   }
 
   &__img {
     max-width: 412px;
-    
+
     @include media('<=lg') {
       max-width: 100%;
       // width: 45%;
