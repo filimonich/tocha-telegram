@@ -2,20 +2,26 @@
   $self: &;
 
   &__container {
-    // margin-top: 70px;
     padding-top: 70px;
     margin-bottom: 86px;
 
     @include media('<=sm') {
-      // margin-top: 60px;
       padding-top: 60px;
       margin-bottom: 62px;
+    }
+
+    @include media('<=xs') {
+      padding-top: 32px;
     }
   }
 
   &__contents {
     display: flex;
     justify-content: flex-start;
+
+    @include media('<=xs') {
+      flex-direction: column;
+    }
 
     &:first-child {
       margin-right: 76px;
@@ -40,9 +46,20 @@
     @include media('<=sm') {
       margin-top: 0;
     }
+
+    @include media('<=xs') {
+      width: 94%;
+    }
+
+    &:first-child {
+      @include media('<=xs') {
+        margin-bottom: 24px;
+      }
+    }
   }
 
   &__headline {
+    z-index: 10;
     max-width: 426px; // ?
     margin-bottom: 68px;
     font-size: 48px;
@@ -133,8 +150,13 @@
       width: 45%;
     }
 
-    @include media('<=lg') {
+    @include media('<=sm') {
       width: 100%;
+    }
+
+    @include media('<=xs') {
+      width: 100%;
+      padding-left: 7px;
     }
   }
 

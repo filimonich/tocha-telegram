@@ -59,7 +59,6 @@
     flex-shrink: 1;
     position: relative;
     margin-right: 181px;
-    // margin-bottom: 30px;
 
     @include media('<=xlg') {
       margin-right: 10px;
@@ -69,18 +68,25 @@
       margin-right: 25px;
     }
 
+    @include media('<=xs') {
+      margin-right: 40%;
+    }
+
     &:nth-child(2) {
       margin-top: 67px;
 
       @include media('<=sm') {
         margin-top: 4px;
       }
+
+      @include media('<=xs') {
+        display: none;
+      }
     }
 
     &:last-child {
       margin-right: 0;
     }
-
 
     &:nth-child(1)::after {
       content: "";
@@ -118,6 +124,13 @@
       z-index: -1;
     }
 
+    &:nth-child(3) {
+
+      @include media('<=xs') {
+        display: none;
+      }
+    }
+
     &:nth-child(3)::after {
       content: "";
       background: url(/images/Ellipse-13.svg) no-repeat center/contain;
@@ -136,7 +149,10 @@
 
     @include media('<=sm') {
       margin-bottom: 36px;
+    }
 
+    @include media('<=xs') {
+      margin-bottom: 47px;
     }
   }
 
@@ -209,5 +225,14 @@
   &__input {}
 
   &__button {}
+
+  &__item-dots {
+    display: none;
+
+    @include media('<=xs') {
+      display: block;
+      margin-top: 20px;
+    }
+  }
 
 }

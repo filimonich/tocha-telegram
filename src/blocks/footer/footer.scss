@@ -31,6 +31,10 @@
       @include media('<=sm') {
         margin-right: 153px;
       }
+
+      @include media('<=xs') {
+        margin-right: 40px;
+      }
     }
   }
 
@@ -62,6 +66,10 @@
 
   &__wrap {
     display: flex;
+
+    @include media('<=xs') {
+      flex-direction: column;
+    }
   }
 
   &__inner {
@@ -79,7 +87,7 @@
         margin-right: 50px;
       }
 
-      @include media('<=sm') {
+      @include media('<=xs') {
         margin-right: auto;
       }
     }
@@ -94,9 +102,12 @@
     line-height: 21px;
     color: $h-text;
 
-
     @include media('<=sm') {
       line-height: 30px;
+    }
+
+    @include media('<=xs') {
+      margin-bottom: 16px;
     }
   }
 
@@ -110,8 +121,16 @@
   &__item {
     margin-bottom: 12px;
 
+    @include media('<=xs') {
+      margin-bottom: 8px;
+    }
+
     &:last-child {
       margin-bottom: 0;
+
+      @include media('<=xs') {
+        margin-bottom: 24px;      
+      }
     }
 
     & a:hover {

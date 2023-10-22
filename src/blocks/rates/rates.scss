@@ -2,11 +2,9 @@
   $self: &;
 
   &__container {
-    // margin-top: 100px;
     padding-top: 100px;
 
     @include media('<=sm') {
-      // margin-top: 44px;
       padding-top: 44px;
     }
   }
@@ -26,7 +24,6 @@
       font-size: 32px;
       line-height: 40px;
     }
-
   }
 
   &__headline-desc {
@@ -43,11 +40,20 @@
       font-size: 20px;
       line-height: 28px;
     }
+
+    @include media('<=xs') {
+      width: 62%;
+      margin: 0 auto;
+    }
   }
 
   &__content {
     @include media('<=sm') {
       margin-bottom: 25px;
+    }
+
+    @include media('<=xs') {
+      padding-top: 40px;
     }
   }
 
@@ -63,6 +69,10 @@
     box-shadow: 0 10px 20px 0 #685ED60D;
     border-radius: 6px;
 
+    @include media('<=xs') {
+      margin-right: 0 auto;
+    }
+
     &:last-child {
       margin-right: 0;
     }
@@ -72,8 +82,18 @@
       margin-right: 14px;
       width: 326px;
 
+      @include media('<=xs') {
+        margin: 0 auto;
+      }
+
       &.active-slide {
         display: block;
+      }
+    }
+
+    @include media('<=xs') {
+      &:nth-child(2) {
+        display: none;
       }
     }
   }
@@ -93,9 +113,18 @@
       font-size: 24px;
       line-height: 48px;
     }
+
+    @include media('<=xs') {
+      margin-bottom: 46px;
+    }
   }
 
-  &__aside {}
+  &__aside {
+    @include media('<=xs') {
+      padding: 0 28px;
+    }
+
+  }
 
   &__subtitle {
     max-width: 255px;
@@ -137,6 +166,10 @@
     span {
       @include media('<=lg') {
         font-size: 16px;
+      }
+
+      @include media('<=xs') {
+        font-size: 18px;
       }
     }
 

@@ -9,6 +9,11 @@
       padding-top: 52px;
       margin-bottom: 60px;
     }
+
+    @include media('<=xs') {
+      padding-top: 50px;
+      margin-bottom: 10px;
+    }
   }
 
   &__headline {
@@ -27,6 +32,10 @@
       line-height: 40px;
     }
 
+    @include media('<=sm') {
+      padding-left: 26px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -42,7 +51,13 @@
         width: 112px;
         height: 95px;
       }
+
+      @include media('<=sm') {
+        top: -44px;
+        right: 0px;
+        width: 55px;
+        height: 46px;
+      }
     }
   }
-
 }

@@ -12,6 +12,11 @@
       margin-bottom: 54px;
     }
 
+    @include media('<=sm') {
+      margin-top: 94px;
+      margin-bottom: 56px;
+    }
+
     &::before {
       content: "";
       z-index: -1;
@@ -29,7 +34,15 @@
       @include media('<=sm') {
         right: 14px;
         width: 98%;
-        background: 100% url(/images/BG-Mask.svg) no-repeat;
+        background: 15% url(/images/BG-Mask.svg) no-repeat;
+        border-radius: 7px;
+      }
+
+      @include media('<=xs') {
+        right: 0;
+        width: 100%;
+        // background: 100% url(/images/BG-Mask-375.svg) no-repeat;
+        background: 50% url(/images/BG-Mask-375.svg) no-repeat;
         border-radius: 7px;
       }
     }
@@ -58,6 +71,31 @@
       align-items: flex-end;
       padding: 51px 27px 89px 331px;
     }
+
+    @include media('<=740px') {
+      padding: 58% 30% 10%;
+    }
+
+    @include media('<=640px') {
+      padding: 58% 20% 10%;
+    }
+
+    @include media('<=560px') {
+      padding: 73% 18% 10%;
+    }
+
+    @include media('<=560px') {
+      padding: 73% 18% 10%;
+    }
+
+    @include media('<=480px') {
+      padding: 92% 15% 10%;
+    }
+
+    @include media('<=380px') {
+      padding: 92% 9% 10%;
+    }
+
   }
 
   &__headline {
@@ -77,6 +115,10 @@
       font-size: 24px;
       line-height: 32px;
     }
+
+    @include media('<=sm') {
+      padding-bottom: 10px;
+    }
   }
 
   &__form {
@@ -91,6 +133,10 @@
 
     @include media('<=sm') {
       padding-right: 15px;
+    }
+
+    @include media('<=sm') {
+      padding-right: 0;
     }
   }
 
@@ -108,6 +154,11 @@
     @include media('<=sm') {
       width: 210px;
       padding-right: 18px;
+    }
+
+    @include media('<=xs') {
+      width: 150px;
+      padding-right: 0;
     }
   }
 
