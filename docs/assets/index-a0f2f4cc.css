@@ -1284,6 +1284,11 @@ a {
     width: 51.5%;
   }
 }
+@media (max-width: 745px) {
+  .header__buttons {
+    display: none;
+  }
+}
 .header__button {
   padding: 10px 20px;
   transition: background-color 0.2s ease-out;
@@ -1336,10 +1341,9 @@ a {
 }
 @media (max-width: 745px) {
   .hero__picture {
-    position: relative;
-    top: 50px;
-    width: 100%;
+    position: static;
     max-width: 500px;
+    margin-top: 10%;
   }
 }
 .hero__picture::before {
@@ -1399,11 +1403,6 @@ a {
     left: 100px;
     left: 70px;
     width: 70px;
-  }
-}
-@media (max-width: 745px) {
-  .hero__img {
-    width: 100%;
   }
 }
 .hero__title {
