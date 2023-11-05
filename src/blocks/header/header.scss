@@ -27,7 +27,12 @@
     }
   }
 
-  &__buttons {}
+  &__buttons {
+
+    @include media('<=xs') {
+      display: none;
+    }
+  }
 
   &__button {
     padding: 10px 20px;
